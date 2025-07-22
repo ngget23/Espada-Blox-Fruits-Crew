@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Espada Elite</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <img
+        src="https://mail.google.com/mail/u/1?ui=2&ik=2087a9dd6e&attid=0.1&permmsgid=msg-f:1837547542188698068&th=198047c0fe0ca9d4&view=fimg&fur=ip&permmsgid=msg-f:1837547542188698068&sz=s0-l75-ft&attbid=ANGjdJ__lDJJ635LS8HxBwLnIwO0H5ZvYF5XzAQDwx6ewf2mCCP-1RJcmCvh4513Ew9X29xiTuIldGYrN1NwKe3iFd110EqOkO7WqutlMEqPtLgo2eFdn7ZOdVQ0Spw&disp=emb&realattid=ii_198047bcf6fb80cee41&zw"
+        alt="Espada Logo" class="logo-img" />
+      <span>Espada Elite</span>
+    </div>
+    <nav>
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#rules">Rules</a></li>
+        <li><a href="#apply">Join</a></li>
+        <li><button id="toggle-dark">Toggle Theme</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Forge Your Legacy</h1>
+    <p>Join the most elite crew in the world of Blox Fruits.</p>
+    <a href="#apply" class="btn">Apply Now</a>
+  </section>
+
+  <section id="about" class="content">
+    <h2>About Espada</h2>
+    <p>
+      Espada Elite is a brotherhood of powerful, loyal warriors. Our mission
+      is domination through unity, precision, and respect. We are not just a
+      crew — we are a code.
+    </p>
+  </section>
+
+  <section id="rules" class="content dark">
+    <h2>Core Commandments</h2>
+    <ul>
+      <li><strong>1.</strong> Obey the command structure.</li>
+      <li><strong>2.</strong> Show loyalty at all times.</li>
+      <li><strong>3.</strong> Be ready for battle — always.</li>
+      <li><strong>4.</strong> Help your brothers rise.</li>
+      <li><strong>5.</strong> No mercy, only respect.</li>
+    </ul>
+  </section>
+
+  <section id="apply" class="content">
+    <h2>Join Us</h2>
+    <form action="https://formsubmit.co/ngget23@gmail.com" method="POST" class="apply-form">
+      <input type="hidden" name="_captcha" value="false" />
+      <input type="text" name="Roblox Username" placeholder="Roblox Username" required />
+      <input type="text" name="Discord Username" placeholder="Discord Username" required />
+      <button type="submit">Submit Application</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Espada Elite. All rights reserved.</p>
+    <p>
+      <a href="https://discord.gg/U3BRqnxS36" target="_blank">Join our Discord</a>
+    </p>
+  </footer>
+
+  <script>
+    // Mobile Nav
+    document.getElementById("menu-toggle").onclick = function () {
+      document.getElementById("nav-links").classList.toggle("active");
+    };
+
+    // Dark Mode Toggle
+    document.getElementById("toggle-dark").onclick = function () {
+      document.body.classList.toggle("light-theme");
+    };
+
+    // Scroll Animations
+    ScrollReveal().reveal(".hero", {
+      delay: 200,
+      origin: "top",
+      distance: "50px",
+    });
+    ScrollReveal().reveal(".content", {
+      delay: 300,
+      origin: "bottom",
+      distance: "50px",
+      interval: 200,
+    });
+  </script>
+</body>
+
+</html>
